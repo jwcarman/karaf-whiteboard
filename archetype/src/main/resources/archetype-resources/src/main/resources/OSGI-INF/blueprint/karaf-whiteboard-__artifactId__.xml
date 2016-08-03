@@ -1,0 +1,15 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+<?xml version="1.0" encoding="UTF-8"?>
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0">
+
+    <bean id="plugin" class="${package}.WhiteboardPluginImpl" />
+
+    <service ref="plugin" interface="com.carmanconsulting.karaf.whiteboard.spi.WhiteboardPlugin">
+        <service-properties>
+            <entry key="name" value="${artifactId}" />
+        </service-properties>
+    </service>
+
+</blueprint>

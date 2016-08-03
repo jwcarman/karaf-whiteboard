@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0">
+
+    <bean id="whiteboardService" class="com.carmanconsulting.karaf.whiteboard.impl.WhiteboardServiceImpl"
+          destroy-method="stop">
+        <argument ref="blueprintBundleContext"/>
+    </bean>
+
+    <service ref="whiteboardService" interface="com.carmanconsulting.karaf.whiteboard.api.WhiteboardService"/>
+
+
+
+</blueprint>

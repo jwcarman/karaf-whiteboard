@@ -1,0 +1,15 @@
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.2.0" name="com.carmanconsulting.karaf.whiteboard-${project.version}">
+
+    <feature name="karaf-whiteboard" version="${project.version}">
+        <!--<bundle>mvn:org.apache.commons/commons-lang3/${commons.lang3.version}</bundle>-->
+        <!--<bundle>mvn:com.google.guava/guava/${guava.version}</bundle>-->
+        <!--<bundle>mvn:com.savoirtech.eos/eos-core/${eos.version}</bundle>-->
+        <!--<bundle>mvn:com.carmanconsulting.karaf/karaf-whiteboard-api/${project.version}</bundle>-->
+        <!--<bundle>mvn:com.carmanconsulting.karaf/karaf-whiteboard-spi/${project.version}</bundle>-->
+        <!--<bundle>mvn:com.carmanconsulting.karaf/karaf-whiteboard-impl/${project.version}</bundle>-->
+
+        <bundle>mvn:com.carmanconsulting.karaf/karaf-whiteboard-bundle1/${project.version}</bundle>
+        <bundle>mvn:com.carmanconsulting.karaf/karaf-whiteboard-bundle2/${project.version}</bundle>
+    </feature>
+
+</features>
